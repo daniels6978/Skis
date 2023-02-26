@@ -9,6 +9,15 @@
       src="https://kit.fontawesome.com/ce58a3376a.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/ce58a3376a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -46,126 +55,83 @@
     <main>
       <section class="skis">
         <h2 class="skis__heading">featured skis</h2>
-
-        <div class="skis__container">
-          <input type="radio" name="slider" id="s1" />
-          <input type="radio" name="slider" id="s2" />
-          <input type="radio" name="slider" id="s3" />
-          <input type="radio" name="slider" id="s4" />
-          <input type="radio" name="slider" id="s5" />
-
+        <div class="wrapper">
           <div class="skis__cards">
-            <label for="s1" id="slide1">
-              <div class="skis__card">
-                <div class="skis__card--image">
-                  <img src="/img/n1.webp" alt="narty1" />
-                  <div class="skis__card--dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div class="skis__card--infos">
-                  <span class="skis__card--name">Nart 1</span>
-                  <span class="skis__card--description"
-                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Porro repudiandae corporis quas in aliquam similique vitae
-                    iure tempore reiciendis optio.</span
-                  >
-                </div>
+            <div class="skis__card">
+              <div class="skis__card--img">
+                <img src="./img/n1.webp" alt="narty" />
               </div>
-            </label>
-            <label for="s2" id="slide2">
-              <div class="skis__card">
-                <div class="skis__card--image">
-                  <img src="/img/n2.webp" alt="narty1" />
-                  <div class="skis__card--dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div class="skis__card--infos">
-                  <span class="skis__card--name">Nart 1</span>
-                  <span class="skis__card--description"
-                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Porro repudiandae corporis quas in aliquam similique vitae
-                    iure tempore reiciendis optio.</span
-                  >
-                </div>
+              <div class="skis__infoBox">
+                <p class="name">switch</p>
+                <p class="price">3267 zl</p>
+                <a href="">shop</a>
               </div>
-            </label>
-            <label for="s3" id="slide3">
-              <div class="skis__card">
-                <div class="skis__card--image">
-                  <img src="/img/n3.webp" alt="narty1" />
-                  <div class="skis__card--dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div class="skis__card--infos">
-                  <span class="skis__card--name">Nart 1</span>
-                  <span class="skis__card--description"
-                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Porro repudiandae corporis quas in aliquam similique vitae
-                    iure tempore reiciendis optio.</span
-                  >
-                </div>
+            </div>
+            <div class="skis__card">
+              <div class="skis__card--img">
+                <img src="./img/n2.webp" alt="narty" />
               </div>
-            </label>
-            <label for="s4" id="slide4">
-              <div class="skis__card">
-                <div class="skis__card--image">
-                  <img src="/img/n4.webp" alt="narty1" />
-                  <div class="skis__card--dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div class="skis__card--infos">
-                  <span class="skis__card--name">Nart 1</span>
-                  <span class="skis__card--description"
-                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Porro repudiandae corporis quas in aliquam similique vitae
-                    iure tempore reiciendis optio.</span
-                  >
-                </div>
+              <div class="skis__infoBox">
+                <p class="name">hoji</p>
+                <p class="price">3539 zl</p>
+                <a href="">shop</a>
               </div>
-            </label>
-            <label for="s5" id="slide5">
-              <div class="skis__card">
-                <div class="skis__card--image">
-                  <img src="/img/n5.webp" alt="narty1" />
-                  <div class="skis__card--dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div class="skis__card--infos">
-                  <span class="skis__card--name">Nart 1</span>
-                  <span class="skis__card--description"
-                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Porro repudiandae corporis quas in aliquam similique vitae
-                    iure tempore reiciendis optio.</span
-                  >
-                </div>
+            </div>
+            <div class="skis__card">
+              <div class="skis__card--img">
+                <img src="./img/n3.webp" alt="narty" />
               </div>
-            </label>
+              <div class="skis__infoBox">
+                <p class="name">raven 4-lock</p>
+                <p class="price">4.357 zl</p>
+                <a href="">shop</a>
+              </div>
+            </div>
+            <div class="skis__card">
+              <div class="skis__card--img">
+                <img src="./img/n4.webp" alt="narty" />
+              </div>
+              <div class="skis__infoBox">
+                <p class="name">msp 107</p>
+                <p class="price">3403 zl</p>
+                <a href="">shop</a>
+              </div>
+            </div>
+            <div class="skis__card">
+              <div class="skis__card--img">
+                <img src="./img/n5.webp" alt="narty" />
+              </div>
+              <div class="skis__infoBox">
+                <p class="name">hoji cc 4-lock</p>
+                <p class="price">4357 zl</p>
+                <a href="">shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="arrow_prev arrow">
+            <span><i class="fas fa-arrow-left"></i></span>
+          </div>
+          <div class="arrow_next arrow">
+            <span><i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
       </section>
     </main>
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
