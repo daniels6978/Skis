@@ -195,11 +195,16 @@ body {
   padding: 10px 20px;
   margin-bottom: 5em;
   font-size: 2.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   border: none;
   color: white;
   background-color: #da2a2a;
   cursor: pointer;
+}
+.header__button:hover {
+  color: #da2a2a;
+  background-color: white;
 }
 
 .skis {
@@ -289,6 +294,107 @@ body {
 }
 .skis__infoBox a:hover {
   background-color: black;
+}
+
+.section_line {
+  position: relative;
+  left: 50%;
+  width: 80%;
+  height: 2px;
+  margin-top: 40px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: black;
+}
+
+.ourSkis {
+  background-color: rgb(233, 230, 230);
+}
+.ourSkis .wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1800px;
+}
+.ourSkis__container {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.ourSkis__heading {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+}
+.ourSkis__imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.ourSkis__left {
+  margin: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.ourSkis__left p {
+  margin-bottom: 40px;
+  font-size: 2.4rem;
+}
+.ourSkis__left a {
+  padding: 10px 30px;
+  font-size: 2.4rem;
+  color: white;
+  background-color: #da2a2a;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.ourSkis__left a:hover {
+  background-color: black;
+}
+.ourSkis__right {
+  margin: 40px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.ourSkis__img {
+  padding: 20px;
+  width: 40vh;
+  overflow: hidden;
+}
+.ourSkis__img button {
+  position: relative;
+  bottom: 100px;
+  left: -40px;
+  padding: 10px 30px;
+  font-size: 2.4rem;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  border: none;
+}
+.ourSkis__img:hover button {
+  background-color: #da2a2a;
+}
+.ourSkis__img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.ourSkis img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (min-width: 400px) {
