@@ -309,6 +309,7 @@ body {
 
 .ourSkis {
   background-color: rgb(233, 230, 230);
+  padding-bottom: 100px;
 }
 .ourSkis .wrapper {
   margin: 0 auto;
@@ -328,6 +329,7 @@ body {
 .ourSkis__heading {
   font-size: 4.8rem;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .ourSkis__imgContainer {
   display: -webkit-box;
@@ -347,6 +349,7 @@ body {
 .ourSkis__left p {
   margin-bottom: 40px;
   font-size: 2.4rem;
+  letter-spacing: 5px;
 }
 .ourSkis__left a {
   padding: 10px 30px;
@@ -367,7 +370,7 @@ body {
 }
 .ourSkis__img {
   padding: 20px;
-  width: 50vh;
+  width: 80vh;
   overflow: hidden;
 }
 .ourSkis__img button {
@@ -404,16 +407,62 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 1000px;
 }
 .team__left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/team.webp);
+  background-size: cover;
+}
+.team__left--mobile {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 55, 55, 0.6156862745);
 }
 .team__right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.team__right h2 {
+  font-size: 4.8rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.team__right p {
+  margin: 50px;
+  color: white;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+}
+.team__right button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 2.4rem;
+  background-color: #da2a2a;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.team__right button:hover {
+  background-color: white;
+  color: #da2a2a;
 }
 
 @media (min-width: 400px) {
@@ -441,5 +490,31 @@ body {
   }
   .ourSkis__img {
     width: 45vh;
+  }
+  .team__left {
+    width: 50%;
+    height: 100%;
+    background-image: url(/img/team.webp);
+    background-size: cover;
+  }
+  .team__left--mobile {
+    display: none;
+  }
+  .team__right {
+    display: block;
+    position: static;
+    width: 50%;
+    margin: 300px 50px 0 50px;
+  }
+  .team h2 {
+    font-size: 4.8rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .team p {
+    margin: 0;
+    color: white;
+    font-size: 2.4rem;
   }
 }/*# sourceMappingURL=main.css.map */
