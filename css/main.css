@@ -403,6 +403,10 @@ body {
 .team {
   background-color: #3a3737;
 }
+.team .wrapper {
+  width: 100%;
+  max-width: 1800px;
+}
 .team__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,6 +469,70 @@ body {
   color: #da2a2a;
 }
 
+.gallery {
+  padding-top: 100px;
+  background-color: #3a3737;
+}
+.gallery__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+.gallery__info h2 {
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 4.8rem;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.gallery__info p {
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  color: white;
+}
+.gallery__container {
+  width: 100%;
+  height: 100%;
+}
+.gallery .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 10px;
+}
+.gallery .column img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.gallery .column img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.gallery__img-card {
+  overflow: hidden;
+  width: 100%;
+  margin: 10px;
+}
+
 @media (min-width: 400px) {
   .skis .arrow {
     top: 150%;
@@ -473,6 +541,13 @@ body {
 @media (min-width: 576px) {
   .nav__mobile {
     width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (min-width: 1100px) {
