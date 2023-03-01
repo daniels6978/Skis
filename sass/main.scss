@@ -485,8 +485,11 @@ body {
     width: 100%;
     height: 100%;
   }
+  .big {
+    height: 30%;
+  }
 
-  .column {
+  &__column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,7 +503,6 @@ body {
 
       &:hover {
         transform: scale(1.1);
-        // background-size: 1.2%;
       }
     }
   }
