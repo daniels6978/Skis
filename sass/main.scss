@@ -458,7 +458,8 @@ body {
 //GALLERY
 
 .gallery {
-  padding-top: 100px;
+  padding: 100px 0;
+
   background-color: #3a3737;
   &__info {
     display: flex;
@@ -494,7 +495,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    margin: 10px;
+    margin: 0 10px 0 10px;
 
     img {
       width: 100%;
@@ -510,6 +511,95 @@ body {
     overflow: hidden;
     width: 100%;
     margin: 10px;
+  }
+}
+
+//FOOTER
+
+.footer {
+  padding-top: 100px;
+  background-color: black;
+  color: white;
+
+  &__information {
+    padding: 50px;
+    p {
+      text-transform: uppercase;
+      padding: 10px;
+
+      &::before {
+        position: relative;
+        top: 20px;
+        left: -20px;
+        content: "";
+        display: block;
+        height: 20px;
+        width: 2px;
+        transform: rotate(30deg);
+        background-color: #da2a2a;
+      }
+    }
+  }
+
+  &__social {
+    padding: 30px;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 70px;
+      letter-spacing: 3px;
+    }
+
+    a {
+      padding: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &__orders-details {
+    display: flex;
+    padding: 30px;
+
+    p {
+      padding: 20px 0;
+      text-transform: uppercase;
+    }
+
+    &--left {
+      flex: 1;
+    }
+
+    &--right {
+      flex: 1;
+    }
+  }
+
+  &__contact {
+    padding: 30px;
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px 5px 5px 10px;
+      background: none;
+      border: 1px solid #3a3737;
+      font-size: 1.8rem;
+      color: white;
+    }
+    &:focus {
+      border: none;
+    }
   }
 }
 
