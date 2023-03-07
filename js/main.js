@@ -6,7 +6,12 @@ const videoHeader = document.querySelector(".header__video");
 
 const handleNav = () => {
   mobileNav.classList.toggle("nav__mobile--active");
-  console.log("object");
+
+  allNavItems.forEach((item) => {
+    item.addEventListener("click", () =>
+      mobileNav.classList.remove("nav__mobile--active")
+    );
+  });
 };
 
 const handleObserver = () => {
